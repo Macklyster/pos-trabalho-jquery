@@ -1,0 +1,290 @@
+/*---------- SCSS ---------*/
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans");
+/*---------- TAGS ---------*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0; }
+
+body {
+    background: #000; 
+}
+
+.no-cssgradients body {
+    background: #bdc3c7; }
+
+header {
+    background: #000;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    position: fixed;
+}
+nav {
+    float: right;
+    margin-top: 13px; 
+    z-index: 1000;}
+nav ul li {
+    display: inline;
+    list-style: none; }
+nav ul li a {
+    font: 1.1em "Open Sans", Tahoma, Verdana;
+    color: #fff;
+    transition: all 0.5s;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 20px; 
+    z-index: 1000;
+}
+nav ul li a:hover {
+    color: #e74c3c; }
+
+input{
+    height: 40px;
+    width: 350px;
+    padding: 10px;
+}
+
+select{
+    height: 40px;
+    width: 350px;
+    padding: 10px;
+}
+
+label{
+    color: #e74c3c;
+    text-transform: uppercase;
+}
+
+footer {
+    width: 100%;
+    background: #000;
+    padding: 20px 0px;
+    float: left; }
+footer a {
+    font-size: 2.5em;
+    transition: all 0.5s;
+    text-decoration: none;
+    color: #fff; }
+footer a:hover {
+    color: #e74c3c; }
+footer p {
+    margin-top: 15px;
+    color: #fff;
+    font: 1.1em "Open Sans", Tahoma, Verdana;
+    color: #fff; }
+
+/*---------- CLASSES ---------*/
+.left {
+    float: left; }
+
+.right {
+    float: right; }
+
+.center {
+    text-align: center; }
+
+.clear {
+    clear: both; }
+
+.texto {
+    position: absolute;
+    top: 280px;
+    color: #fff;
+    font-family: "Fijalla one", Arial;
+    left: 30px;
+    text-shadow: 2px 2px 1px #000; }
+.texto p {
+    font-size: 1.4em;
+    margin-bottom: 15px; }
+.texto h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+    margin-bottom: 10px; }
+.texto .btn {
+    border: 1px solid #da2323;
+    padding: 15px;
+    transition: all 0.5s;
+    text-shadow: 0 0 0 transparent;
+    color: #da2323;
+    text-decoration: none;
+    font-family: "Fijalla one", Arial;
+    width: 25%; }
+.texto .btn:hover {
+    background: #da2323;
+    color: #fff; }
+
+.container {
+    width: 1000px;
+    margin: auto; }
+.container h1 {
+    font: 3em "Fijalla one", Arial;
+    margin: 50px 0px 20px 0px; }
+.container h2 {
+    font: 2em "Fijalla one", Arial;
+    color: #bdc3c7;
+    margin-bottom: 20px; }
+.container p {
+    font: 1.2em "Open Sans", Tahoma, Verdana;
+    text-align: justify;
+    margin: 10px 65px; }
+
+.contato{
+    font: 1.2em "Open Sans", Tahoma, Verdana;
+    text-align: left;
+    margin: 10px 65px; }
+
+.img {
+    width: 70%;
+    background: #ecf0f1;
+    padding: 10px 10px 30px 10px;
+    box-shadow: 1px 1px 2px #bdc3c7;
+    transform: rotate(-1deg); }
+
+.img-logo{
+    width: 140px;
+}
+
+.col1 {
+    width: 50%; }
+
+.col2 {
+    width: 50%; }
+
+.top {
+    padding-top: 80px; }
+
+.menu-primary{
+    height: 60px;
+    margin-right: 30px;
+    padding-top: 116px;
+    background: #000;
+}
+
+
+.dropbtn {
+    background-color: rgb(253, 0, 13);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #e74c3c;
+}
+
+.btn-envia {
+    padding: 15px;
+    background: #fff;
+    color: #000;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    transition: all 0.5s;
+    text-shadow: 0 0 0 transparent;
+    text-decoration: none;
+    font-family: "Fjalla one", Arial;
+    width: 87%;}
+.btn-envia:hover {
+    background: #e74c3c;
+    color: #fff; }
+
+.menu{ 
+    width: 650px;
+    margin-top: -10px;
+}
+
+.slide{
+    margin-top: 55px;
+}
+
+
+/*---------- IDS ---------*/
+#banner {
+    width: 100%;
+    padding-top: 15px;
+    background: #000;}
+
+#header {
+    background: #bada55;
+    color: white;
+    font-family: Droid Sans;
+    font-size: 18px;
+    line-height: 1.6em;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    text-shadow: 0 1px 1px rgba(0,0,0,.2);
+    width:100%;
+    box-sizing:border-box;
+    z-index: 1000;
+}
+
+#banner img {
+    width: 100%; }
+
+#cadastro {
+    width: 100%;
+    background: url("../images/bg.jpg") fixed;
+    padding: 50px 0px;
+    float: left; }
+#cadastro h2 {
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 20px; }
+
+#galeria {
+    width: 100%;
+    padding: 50px 0px;
+    float: left; }
+#galeria h2 {
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 20px; }
+#galeria .g-img{
+    width: 33%;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box; }
+#galeria img {
+    filter: sepia(80%);
+    transition: all 0.5s; }
+#galeria img:hover {
+    filter: sepia(0%); }
+
+#topo {
+    background: #e74c3c;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 1.1em;
+    padding: 5px 10px;
+    margin: 5px;
+}

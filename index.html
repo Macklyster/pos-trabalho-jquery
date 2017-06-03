@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Site sobre utilizações de plugins jQuery">
+        <meta name="keywords" content="noel, pos, alfa, jquery">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+
+        <title>Trabalho - jQuery</title>
+
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/parsley.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/jquery-ui.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/swipebox.css">
+        <link rel="stylesheet" href="css/animate.css">
+
+        <link rel="stylesheet" href="css/gallery.css">
+        <link rel="stylesheet" href="touchTouch/touchTouch.css">
+
+        <script src="js/jquery-3.1.1.min.js"></script>
+
+        <script src="js/inputmask.js"></script>
+        <script src="js/inputmask.date.extensions.js"></script>
+        <script src="js/inputmask.numeric.extensions.js"></script>
+        <script src="js/inputmask.phone.extensions.js"></script>
+        <script src="js/jquery.inputmask.js"></script>
+
+        <script src="js/jquery.swipebox.js"></script>
+        <script src="js/parsley.js"></script>
+
+        <script src="js/gallery.js"></script>
+        <script src="touchTouch/touchTouch.jquery.js"></script>
+
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/carousel.js"></script>  
+        <script src="js/jquery-ui.js"></script>
+
+        <script src="js/cidade.js"></script>
+
+
+
+    </head>
+    <body>
+        <header>
+            <a href="index.html" title="Macklyster Miguel Marteres" id="logo">
+                <img class="img-logo" src="images/logo.png" alt="3M - Macklyster Miguel Marteres" title="3M - Macklyster Miguel Marteres">
+            </a>
+        </header> <!-- Fim do Hearder -->
+
+        <div class="menu-primary">
+            <nav id="menu-heard" class="menu">
+                <ul>
+                    <li>
+                        <a href="index.html" title="Home" >Página Inicial</a>
+                    </li>
+                    <div class="dropdown">
+                        <button class="dropbtn">PRODUTO</button>
+                        <div class="dropdown-content">
+                            <a href="#">Perecíveis</a>
+                            <a href="#">Não Perecíveis</a>
+                        </div>
+                    </div>
+
+                    <li>
+                        <a href="#cadastro" title="Filmes">Cadastro</a>
+                    </li>
+                    <li>
+                        <a href="quemsomos.html" title="Contato">Quem somos</a>
+                    </li>
+                    <li>
+                        <a href="contato.html" title="Contato">Contato</a>
+                    </li>
+                </ul>
+            </nav> <!-- Fim do Nav -->
+        </div>
+
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="images/banner1.jpg">
+                </div>
+
+                <div class="item">
+                    <img src="images/banner2.jpg">
+                </div>
+
+                <div class="item">
+                    <img src="images/banner3.jpg">
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!--img src="images/banner1.jpg" alt="Filme do Logan" title="Filme do Logan"-->
+
+        <div class="texto wow fadeInDown">
+            <p>Trabalho de jQuery</p>
+            <h1>3M - Macklyster Miguel Marteres</h1>
+            <p>
+                <a href="#galeria" title="Sobre" class="btn swipebox" id="sticker">
+                    GALERIAS
+                </a>
+            </p>
+        </div> <!-- Fim do Banner -->
+        <main class="container top">
+            <div id="galeria">
+                <div class="container">
+                    <h2 class="center">Galeria</h2>
+                    <div class="g-img wow fadeIn" data-wow-delay="0.5s">
+                        <div class="thumbs" data-gallery="one">
+                            <a href="images/001.jpeg" style="background-image:url(images/001.jpeg)" title="Miguel"></a>
+                            <a href="images/004.jpeg" style="background-image:url(images/004.jpeg)" title="Manuela"></a>
+                        </div>
+                    </div>
+                    <div class="g-img wow fadeIn" data-wow-delay="1s">
+                        <div class="thumbs" data-gallery="one">
+                            <a href="images/002.jpeg" style="background-image:url(images/002.jpeg)" title="Miguel"></a>
+                            <a href="images/003.jpeg" style="background-image:url(images/003.jpeg)" title="Manuela"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div id="cadastro">
+            <div class="container top">
+                <h2 class="center">ENTRE EM CONTATO</h2>
+                <form id="form" name="form" method="POST" class="center" data-parsley-validate>
+                    <div class="col1 left wow bounceInRight" data-wow-delay="0.5s">
+                        <label for="nome"><p>Preencha seu nome:</p></label>
+                        <br  />
+                        <input type="text" name="nome" required="" title="Por favor informe seu nome!"
+                               placeholder="Informe seu nome completo">
+                        <div class="clear"></div>
+                        <label for="email" class="contato">Preencha seu e-mail:</label>
+                        <br />
+                        <input type="email" name="email" required="" title="Por favor informe seu e-mail!"
+                               placeholder="Informe um email valido">
+                        <div class="clear"></div>
+                        <label for="estado"><p>Estado:</p></label>
+                        <br />
+                        <select id="estado" required title="Por favor selecione um estado!"></select>
+                    </div>
+                    <div class="col2 right wow bounceInLeft" data-wow-delay="0.8s">
+                        <div class="clear"></div>
+                        <label for="telefone"><p>Telefone:</p></label>
+                        <br />
+                        <input type="text" id="telefone" required="" title="Por favor informe seu telefone!"
+                               placeholder="Informe o numero de seu celular">
+                        <div class="clear"></div>
+                        <label for="datanascimento"><p>Data de Nascimento:</p></label>
+                        <br />
+                        <input type="text" id="datanascimento" required="" 
+                               title="Por favor informe sua data de nascimento!"
+                               placeholder="Informe data do seu aniversário">
+                        <div class="clear"></div>
+                        <label for="cidade"><p>Cidade:</p></label>
+                        <br />
+                        <select id="cidade" title="Por favor selecione uma cidade!" required></select>
+                    </div>
+
+                    <button class="btn-envia" type="submit">
+                        <i class="fa fa-check"></i> Enviar Mensagem
+                    </button>
+                </form>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <footer class="center">
+            <a href="http://facebook.com/macklyster" title="Facebook">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+            <a href="http://github.com/macklyster" title="Github">
+                <i class="fa fa-github"></i>
+            </a>
+            <a href="http://twitter.com/macklyster" title="Twitter">
+                <i class="fa fa-twitter-square"></i>
+            </a>
+            <div class="right">
+                <button type="button" id="topo">
+                    Topo
+                </button>
+            </div>
+            <p>Desenvolvido por Macklyster M Marteres</p>
+        </footer>
+
+        <script type="text/javascript">
+            new WOW().init();
+
+            $("#datanascimento").datepicker();
+
+            $('#datanascimento').inputmask('99/99/9999');
+            $('#telefone').inputmask('(99) 9999[9]-9999');
+
+            $('#form').parsley().on('field:validated', function () {
+                var ok = $('.parsley-error').length === 0;
+                $('.bs-callout-info').toggleClass('hidden', !ok);
+                $('.bs-callout-warning').toggleClass('hidden', ok);
+            })
+                    .on('form:submit', function () {
+                        return false;
+                    });
+            ;
+
+            $('.thumbs a').touchTouch();
+
+            $('.carousel').carousel({
+                interval: 2000
+            });
+
+            $('.swipebox').swipebox();
+
+            (function ($) {
+
+                $.fn.adicionalegenda = function () {
+                    return this.each(function () {
+
+                        var img = $(this);
+                        var legend = document.createElement('legend');
+                        legend.innerHTML = img.attr('alt');
+
+                        $(img).parent().append(legend);
+                    });
+
+                };
+
+            })(jQuery);
+
+            $('#topo').click(function () {
+                $("html, body").animate({scrollTop: 0}, 600);
+                return false;
+            });
+
+        </script>
+
+
+    </body>
+</html>
+
